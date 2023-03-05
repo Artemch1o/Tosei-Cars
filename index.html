@@ -1,12 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tosei</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <p></p>
+    <aside class="aside">
+        <div class="logo">
+            <img class="logo__img" src="img/logo.svg" alt="">
+            <span class="logo__text">Tosei</span>
+        </div>
+
+        <ul class="aside__list">
+            <li class="aside__list-item">Услуги</li>
+            <li class="aside__list-item">Каталог техники</li>
+            <li class="aside__list-item">Аукционы</li>
+            <li class="aside__list-item aside__list-item--arrow">
+                Информация
+                <img src="img/chevron.svg" alt="">
+            </li>
+            <li class="aside__list-item">О нас</li>
+            <li class="aside__list-item">Отзывы</li>
+            <li class="aside__list-item">Контакты</li>
+        </ul>
+
+        <div class="aside__socials">
+            <img src="img/socials-1.png" alt="">
+            <img src="img/socials-2.png" alt="">
+            <img src="img/socials-3.png" alt="">
+        </div>
+    </aside>
+
+    <div class="inner">
+        <header class="header">
+            <p class="header__text">Автомобили из японии с <br> доставокй по всей России</p>
+
+            <div class="header__info">
+                <a class="header__tel" href="tel:88002507807">8 800 250-78-07</a>
+                <p class="header__text">Бесплатный звонок по всей России</p>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="wrapper">
+                <h1 class="banner__title">Доставим любую технику из <br> Японии за 3 недели</h1>
+
+                <div class="banner__filter filter">
+                    <form class="filter__form" action="#">
+                        <div class="filter__row">
+                            <div class="filter__label">
+                                <div class="filter__checkbox">
+                                    <img src="img/mark.svg" alt="">
+                                </div>
+                                <span>Полная пошлина</span>
+                            </div>
+
+                            <div class="filter__label">
+                                <div class="filter__checkbox">
+                                    <img src="img/mark.svg" alt="">
+                                </div>
+                                <span>Распил или конструктор</span>
+                            </div>
+                        </div>
+
+                        <div class="filter__row">
+                            <div class="filter__select">
+                                <span class="filter__select-text">Тип техники</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text">Тип техники</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text">Тип техники</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text">Тип техники</span>
+                                <div class="filter__select-wrapper">
+                                    <div class="filter__select-box">
+                                        <span>Не выбрано</span>
+                                        <img src="img/chevron.svg" alt="">
+                                    </div>
+                                    <div class="filter__select-box">
+                                        <span>Не выбрано</span>
+                                        <img src="img/chevron.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="filter__btn">Найти</button>
+                        </div>
+
+                        <div class="filter__row">
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="wrapper">
+                <h2 style="padding-top: 126px;">Популярные автомобили</h2>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
