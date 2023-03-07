@@ -243,4 +243,74 @@ body {
       align-self: flex-end;
   border: none;
   padding: 6px 16px;
+}
+
+.popular {
+  padding-top: 135px;
+}
+.popular__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.popular__title__cars {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.popular__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.popular__checkbox:not(:first-child) {
+  margin-left: 24px;
+}
+.popular__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+.popular__cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popular__img {
+  max-width: 226px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+}
+.popular__drive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 45px 0 65px 50px;
+  gap: 8px;
 }/*# sourceMappingURL=style.css.map */
