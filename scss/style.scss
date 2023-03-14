@@ -457,6 +457,10 @@ img {
 
     &__img {
         margin-bottom: 17px;
+
+        &--first {
+            opacity: 0.3;
+        }
     }
 
     &__head {

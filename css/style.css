@@ -548,6 +548,9 @@ img {
 .buy__img {
   margin-bottom: 17px;
 }
+.buy__img--first {
+  opacity: 0.3;
+}
 .buy__head {
   margin-bottom: 8px;
 }
