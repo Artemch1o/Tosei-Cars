@@ -1,0 +1,81 @@
+.filter {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #cd0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__select-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+  }
+
+  &__select-box {
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__select-wrapper {
+    display: flex;
+    gap: 3px;
+  }
+
+  &__btn {
+    background: #cd0000;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ffffff;
+    height: 100%;
+    align-self: flex-end;
+    border: none;
+    padding: 6px 16px;
+  }
+
+  &__row-container {
+  }
+}

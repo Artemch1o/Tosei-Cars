@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+    background-color: #FFFFFF;
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &__info {
+        text-align: right;
+    }
+}
