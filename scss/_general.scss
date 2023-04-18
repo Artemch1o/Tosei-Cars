@@ -1,31 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
 }
 
 img {
-    max-width: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .wrapper {
-    padding: 0 40px;
-    margin: 0 auto;
+  padding: 0 40px;
+  margin: 0 auto;
 }
 
 .inner {
-    padding-left: 283px;
+  padding-left: 283px;
 }
 
 .phone--red {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #CD0000;
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #cd0000;
+  text-decoration: none;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }

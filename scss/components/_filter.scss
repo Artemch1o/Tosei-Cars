@@ -9,6 +9,12 @@
     display: flex;
   }
 
+  &__row-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   &__label {
     display: flex;
     gap: 12px;
@@ -56,6 +62,7 @@
     color: #000000;
     display: flex;
     justify-content: space-between;
+    width: 200px;
   }
 
   &__select-wrapper {
@@ -74,8 +81,5 @@
     align-self: flex-end;
     border: none;
     padding: 6px 16px;
-  }
-
-  &__row-container {
   }
 }

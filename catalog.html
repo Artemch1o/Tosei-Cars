@@ -18,10 +18,10 @@
 
 <body>
     <aside class="aside">
-        <div class="logo">
+        <a href="/" class="logo">
             <img class="logo__img" src="img/logo.svg" alt="">
             <span class="logo__text">Tosei</span>
-        </div>
+        </a>
 
         <ul class="aside__list">
             <li class="aside__list-item">Услуги</li>
@@ -55,90 +55,373 @@
             </div>
         </header>
 
-        <section class="main">
-            <div class="breadcrumbs">
-                <span class="breadcrumbs__text">Главная</span>
-                <div class="breadcrumbs__circle"></div>
-                <span class="breadcrumbs__text">Контакты</span>
+        <section class="catalog">
+            <div class="catalog__banner">
+                <div class="breadcrumbs">
+                    <span class="breadcrumbs__text">Главная</span>
+                    <div class="breadcrumbs__circle"></div>
+                    <span class="breadcrumbs__text">Контакты</span>
+                </div>
+
+                <h1 class="main__title">Каталог техники</h1>
+
+                <div class="filter">
+                    <form class="filter__form" action="#">
+                        <div class="filter__row">
+                            <div class="filter__label">
+                                <div class="filter__checkbox">
+                                    <img src="img/mark.svg" alt="">
+                                </div>
+                                <span>Полная пошлина</span>
+                            </div>
+
+                            <div class="filter__label">
+                                <div class="filter__checkbox">
+                                    <img src="img/mark.svg" alt="">
+                                </div>
+                                <span>Распил или конструктор</span>
+                            </div>
+                        </div>
+
+                        <div class="filter__row">
+                            <div class="filter__select">
+                                <span class="filter__select-text">Тип техники</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text"> Производитель</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text">Марка</span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="filter__select">
+                                <span class="filter__select-text">Год выпуска</span>
+                                <div class="filter__select-wrapper">
+                                    <div class="filter__select-box">
+                                        <span>от</span>
+                                        <img src="img/chevron.svg" alt="">
+                                    </div>
+                                    <div class="filter__select-box">
+                                        <span>до</span>
+                                        <img src="img/chevron.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="filter__btn">Найти</button>
+                        </div>
+
+                        <div class="filter__row">
+                            <div class="filter__row-container">
+                                <span class="filter__text">
+                                    автомоибили
+                                    <span class="filter__text--red">
+                                        256
+                                    </span>
+                                </span>
+                                <div class="filter__select-box">
+                                    <span>Не выбрано</span>
+                                    <img src="img/chevron.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <h1 class="main__title">Каталог техники</h1>
+            <div class="catalog__wrapper">
+                <div class="sort">
+                    <h2 class="sort__title section-title">Популярные автомобили</h2>
 
-            <div class="filter">
-                <form class="filter__form" action="#">
-                    <div class="filter__row">
-                        <div class="filter__label">
-                            <div class="filter__checkbox">
-                                <img src="img/mark.svg" alt="">
-                            </div>
-                            <span>Полная пошлина</span>
+                    <div class="sort__wrapper">
+                        <div class="sort__checkbox">
+                            <img src="img/checkbox-point-1.svg" alt="">
+                            <span>Любые</span>
                         </div>
 
-                        <div class="filter__label">
-                            <div class="filter__checkbox">
-                                <img src="img/mark.svg" alt="">
-                            </div>
-                            <span>Распил или конструктор</span>
+                        <div class="sort__checkbox">
+                            <img src="img/checkbox-point-2.svg" alt="">
+                            <span>В наличии</span>
+
+                        </div>
+
+                        <div class="sort__checkbox">
+                            <img src="img/checkbox-point-2.svg" alt="">
+                            <span>Под заказ</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="filter__row">
-                        <div class="filter__select">
-                            <span class="filter__select-text">Тип техники</span>
-                            <div class="filter__select-box">
-                                <span>Не выбрано</span>
-                                <img src="img/chevron.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="filter__select">
-                            <span class="filter__select-text"> Производитель</span>
-                            <div class="filter__select-box">
-                                <span>Не выбрано</span>
-                                <img src="img/chevron.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="filter__select">
-                            <span class="filter__select-text">Марка</span>
-                            <div class="filter__select-box">
-                                <span>Не выбрано</span>
-                                <img src="img/chevron.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="filter__select">
-                            <span class="filter__select-text">Год выпуска</span>
-                            <div class="filter__select-wrapper">
-                                <div class="filter__select-box">
-                                    <span>от</span>
-                                    <img src="img/chevron.svg" alt="">
-                                </div>
-                                <div class="filter__select-box">
-                                    <span>до</span>
-                                    <img src="img/chevron.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="filter__btn">Найти</button>
-                    </div>
-
-                    <div class="filter__row">
-                        <div class="filer__row-container">
-                            <span class="filter__text">
-                                автомоибили
-                                <span class="filter__text--red">
-                                    256
-                                </span>
+                <div class="popular">
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-1.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">Honda Fit</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    1,2 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2015 г.
+                                </p>
                             </span>
-                            <div class="filter__select-box">
-                                <span>Не выбрано</span>
-                                <img src="img/chevron.svg" alt="">
-                            </div>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">34
+                                    000 км
+                                </p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Задний
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость во Владивостоке</span>
+                            <p class="popular__check">630 000 ₽</p>
+                            <button class="popular__btn">В наличии</button>
                         </div>
                     </div>
-                </form>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-2.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">BMW - X5 2005</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    230 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2005 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">110
+                                    000
+                                    км</p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Полный
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">275 000 ₽</p>
+                            <button class="popular__btn-second">Под заказ</button>
+                        </div>
+                    </div>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-3.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">Toyota Prius</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    109 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2009 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">57
+                                    000 км
+                                </p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Передний
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">310 000 ₽</p>
+                            <button class="popular__btn">В наличии</button>
+                        </div>
+                    </div>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-1.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">Honda Fit</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    1,2 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2015 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">34
+                                    000 км
+                                </p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Задний
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость во Владивостоке</span>
+                            <p class="popular__check">630 000 ₽</p>
+                            <button class="popular__btn">В наличии</button>
+                        </div>
+                    </div>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-2.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">BMW - X5 2005</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    230 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2005 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">110
+                                    000
+                                    км</p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Полный
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">275 000 ₽</p>
+                            <button class="popular__btn-second">Под заказ</button>
+                        </div>
+                    </div>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-3.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">Toyota Prius</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    109 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2009 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">57
+                                    000 км
+                                </p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Передний
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">310 000 ₽</p>
+                            <button class="popular__btn">В наличии</button>
+                        </div>
+                    </div>
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-2.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">BMW - X5 2005</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    230 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2005 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">110
+                                    000
+                                    км</p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Полный
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">275 000 ₽</p>
+                            <button class="popular__btn-second">Под заказ</button>
+                        </div>
+                    </div>
+
+                    <div class="popular__cars">
+                        <img class="popular__img" src="img/car-3.png" alt="">
+                        <div class="popular__info">
+                            <h3 class="popular__title-cars">Toyota Prius</h3>
+                            <span class="popular__description">Объем двигателя: <p
+                                    class="popular__description-information">
+                                    109 л.с.</p></span>
+                            <span class="popular__description">Год: <p class="popular__description-information">2009 г.
+                                </p>
+                            </span>
+                            <span class="popular__description">Пробег: <p class="popular__description-information">57
+                                    000 км
+                                </p></span>
+                            <span class="popular__description-information">Под полную пошлину</span>
+                        </div>
+
+                        <div class="popular__drive">
+                            <span class="popular__description">Привод: <p class="popular__description-information">
+                                    Передний
+                                </p></span>
+                            <span class="popular__description">КПП: <p class="popular__description-information">Автомат
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="popular__price">
+                            <span class="popular__description">Стоимость в Японии</span>
+                            <p class="popular__check">310 000 ₽</p>
+                            <button class="popular__btn">В наличии</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

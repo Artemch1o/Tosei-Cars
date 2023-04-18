@@ -1,7 +1,15 @@
-.main {
-  padding: 23px 42px 38px;
-  background: #f7f7f9;
+.catalog {
   box-shadow: -1px 0px 0px #e5e5ef;
+
+  &__banner {
+    padding: 23px 42px 38px;
+    background: #f7f7f9;
+    margin-bottom: 37px;
+  }
+
+  &__wrapper {
+    padding: 23px 42px 38px;
+  }
 
   &__title {
     font-weight: 700;
@@ -9,5 +17,9 @@
     line-height: 39px;
     color: #000000;
     margin-bottom: 24px;
+  }
+
+  .popular {
+    padding: 0;
   }
 }
