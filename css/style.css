@@ -162,6 +162,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 16px;
+  cursor: pointer;
 }
 .reviews__img {
   max-width: 72px;
