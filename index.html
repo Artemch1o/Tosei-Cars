@@ -63,18 +63,14 @@
                 <div class="banner__filter filter">
                     <form class="filter__form" action="#">
                         <div class="filter__row">
-                            <div class="filter__label">
-                                <div class="filter__checkbox">
-                                    <img src="img/mark.svg" alt="">
-                                </div>
-                                <span>Полная пошлина</span>
+                            <div class="filter__checkbox">
+                                <input class="filter__input" type="checkbox" id="checkbox_1">
+                                <label class="filter__label" for="checkbox_1">Полная пошлина</label>
                             </div>
 
-                            <div class="filter__label">
-                                <div class="filter__checkbox">
-                                    <img src="img/mark.svg" alt="">
-                                </div>
-                                <span>Распил или конструктор</span>
+                            <div class="filter__checkbox">
+                                <input class="filter__input" type="checkbox" id="checkbox_2">
+                                <label class="filter__label" for="checkbox_2">Распил или конструктор</label>
                             </div>
                         </div>
 
@@ -134,20 +130,20 @@
                     <h2 class="sort__title section-title">Популярные автомобили</h2>
 
                     <div class="sort__wrapper">
-                        <div class="sort__checkbox">
-                            <img src="img/checkbox-point-1.svg" alt="">
-                            <span>Любые</span>
+                        <div class="sort__radio">
+                            <input class="sort__input" name="male" type="radio" id="radio_1">
+                            <label class="sort__label" for="radio_1">Любые</label>
                         </div>
 
-                        <div class="sort__checkbox">
-                            <img src="img/checkbox-point-2.svg" alt="">
-                            <span>В наличии</span>
-
+                        <div class="sort__radio">
+                            <input class="sort__input" name="male" type="radio" id="radio_2">
+                            <label class="sort__label" for="radio_2">В наличии</label>
                         </div>
 
-                        <div class="sort__checkbox">
-                            <img src="img/checkbox-point-2.svg" alt="">
-                            <span>Под заказ</span>
+
+                        <div class="sort__radio">
+                            <input class="sort__input" name="male" type="radio" id="radio_3">
+                            <label class="sort__label" for="radio_3">Под заказ</label>
                         </div>
                     </div>
 
@@ -279,35 +275,43 @@
                 <h2 class="reviews__head section-title">Отзывы</h2>
                 <div class="reviews__row">
                     <div class="reviews__star">
-
-
-                        <video class="reviews__video" src="video.mp4" loop poster="img/davidich_fonts.webp"></video>
-
-
-
-
-
+                        <div class="reviews__video-wrap">
+                            <video class="reviews__video" src="video.mp4" loop poster="img/davidich_fonts.webp"></video>
+                            <img class="reviews__start" src="img/start-btn-viedo.svg" alt="">
+                        </div>
                         <img class="reviews__img" src="img/star-1.svg" alt="star">
                         <span class="reviews__title">Генадий Сергеевич</span>
                         <span class="reviews__text">Toyota Allion </span>
                     </div>
 
                     <div class="reviews__star">
-                        <video class="reviews__video" src="video.mp4" loop controls poster="img/reviews-2.png"></video>
+                        <div class="reviews__video-wrap">
+                            <video class="reviews__video" src="video.mp4" loop controls
+                                poster="img/reviews-2.png"></video>
+                            <img class="reviews__start" src="img/start-btn-viedo.svg" alt="">
+                        </div>
                         <img class="reviews__img" src="img/star-2.svg" alt="star">
                         <span class="reviews__title">Ольга Архипова</span>
                         <span class="reviews__text">Toyota Allion </span>
                     </div>
 
                     <div class="reviews__star">
-                        <video class="reviews__video" src="video.mp4" loop controls poster="img/reviews-3.png"></video>
+                        <div class="reviews__video-wrap">
+                            <video class="reviews__video" src="video.mp4" loop controls
+                                poster="img/reviews-3.png"></video>
+                            <img class="reviews__start" src="img/start-btn-viedo.svg" alt="">
+                        </div>
                         <img class="reviews__img" src="img/star-1.svg" alt="star">
                         <span class="reviews__title">Николай Евгеньевич</span>
                         <span class="reviews__text">Toyota Allion </span>
                     </div>
 
                     <div class="reviews__star">
-                        <video class="reviews__video" src="video.mp4" loop controls poster="img/reviews-4.png"></video>
+                        <div class="reviews__video-wrap">
+                            <video class="reviews__video" src="video.mp4" loop controls
+                                poster="img/reviews-4.png"></video>
+                            <img class="reviews__start" src="img/start-btn-viedo.svg" alt="">
+                        </div>
                         <img class="reviews__img" src="img/star-1.svg" alt="star">
                         <span class="reviews__title">Роман Юрьевич</span>
                         <span class="reviews__text">Toyota Allion </span>

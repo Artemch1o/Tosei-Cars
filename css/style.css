@@ -142,6 +142,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 50px 0 50px 0;
+  gap: 16px;
 }
 .reviews__star {
   display: -webkit-box;
@@ -155,14 +156,26 @@ img {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
+.reviews__video-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
 .reviews__video {
-  max-width: 200px;
   width: 100%;
   height: 134px;
   -o-object-fit: cover;
      object-fit: cover;
-  padding-bottom: 16px;
   cursor: pointer;
+}
+.reviews__start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
 }
 .reviews__img {
   max-width: 72px;
@@ -554,32 +567,61 @@ img {
           justify-content: space-between;
   width: 100%;
 }
-.filter__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.filter__checkbox {
+  position: relative;
 }
-.filter__label:not(:last-child) {
+.filter__checkbox:not(:last-child) {
   margin-right: 32px;
 }
-.filter__checkbox {
+.filter__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.filter__label {
+  font-size: 1rem;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.filter__label::before {
+  content: "";
+  display: block;
   width: 18px;
   height: 18px;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   border-radius: 4px;
+  -webkit-transition: background-color 0.5s linear, border 0.5s linear;
+  -o-transition: background-color 0.5s linear, border 0.5s linear;
+  transition: background-color 0.5s linear, border 0.5s linear;
+}
+.filter__label::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("/img/Icon.svg") no-repeat;
+  background-size: 12px 12px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+.filter__input:checked + .filter__label:before {
   background-color: #cd0000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-color: #cd0000;
+}
+.filter__input:checked + .filter__label:after {
+  opacity: 1;
 }
 .filter__select {
   display: -webkit-box;
@@ -621,6 +663,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 3px;
+}
+.filter__select-wrapper .filter__select-box {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
 }
 .filter__btn {
   background: #cd0000;
@@ -840,24 +886,67 @@ img {
   border-radius: 4px;
 }
 
+.sort__title {
+  margin-bottom: 15px;
+}
 .sort__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 16px;
   margin-bottom: 25px;
 }
-.sort__title {
-  margin-bottom: 15px;
+.sort__radio {
+  position: relative;
+  margin-bottom: 1rem;
 }
-.sort__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+.sort__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
 }
-.sort__checkbox:not(:first-child) {
-  margin-left: 24px;
+.sort__label {
+  font-size: 1rem;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.sort__label::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: border 0.5s linear;
+  -o-transition: border 0.5s linear;
+  transition: border 0.5s linear;
+}
+.sort__label::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+.sort__input:checked + .sort__label:before {
+  background-color: #cd0000;
+  border-color: #cd0000;
+}
+.sort__input:checked + .sort__label:after {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
