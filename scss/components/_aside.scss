@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 283px;
-    background-color: #cccccc;
+    max-width: 200px;
+    background-color: #F7F7F9;
     height: 100vh;
     padding: 28px 0;
 
@@ -22,6 +22,19 @@
         font-size: 16px;
         line-height: 20px;
         color: #000000;
+        cursor: pointer;
+
+        &:hover {
+          color: #858594;  
+        }
+
+        &--active {
+            border-left: 2px solid #CD0000;
+
+            .aside__list-link {
+                color: #858594; 
+            }
+        }
 
         &--arrow {
             display: flex;

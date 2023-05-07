@@ -25,7 +25,7 @@
 
         <ul class="aside__list">
             <li class="aside__list-item">Услуги</li>
-            <li class="aside__list-item">
+            <li class="aside__list-item aside__list-item--active">
                 <a class="aside__list-link" href="catalog.html">Каталог техники</a>
             </li>
             <li class="aside__list-item">Аукционы</li>
@@ -63,7 +63,7 @@
                     <span class="breadcrumbs__text">Контакты</span>
                 </div>
 
-                <h1 class="main__title">Каталог техники</h1>
+                <h1 class="catalog__title">Каталог техники</h1>
 
                 <div class="filter">
                     <form class="filter__form" action="#">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
 
-                        <div class="filter__row">
+                        <div class="filter__row filter__select-row">
                             <div class="filter__select">
                                 <span class="filter__select-text">Тип техники</span>
                                 <div class="filter__select-box">
@@ -122,17 +122,12 @@
                         </div>
 
                         <div class="filter__row">
-                            <div class="filter__row-container">
-                                <span class="filter__text">
-                                    автомоибили
-                                    <span class="filter__text--red">
-                                        256
-                                    </span>
-                                </span>
-                                <div class="filter__select-box">
-                                    <span>Не выбрано</span>
-                                    <img src="img/chevron.svg" alt="">
-                                </div>
+                            <div class="filter__text">
+                                Автомобилей в наличии: <span class="filter__text--accent">256</span>
+                            </div>
+                            <div class="filter__search-type">
+                                <span>Расширенный поиск</span>
+                                <img src="img/chevron.svg" alt="">
                             </div>
                         </div>
                     </form>
@@ -420,6 +415,55 @@
                 </div>
             </div>
         </section>
+
+        <div class="pagination">
+            <button class="pagination__prev">
+                <img src="img/prev.svg" alt="prev button">
+            </button>
+
+            <div class="pagination__wrap">
+                <button class="pagination__page">
+                    1
+                </button>
+                <button class="pagination__page">
+                    2
+                </button>
+                <button class="pagination__page pagination__page--active">
+                    3
+                </button>
+                <button class="pagination__page">
+                    4
+                </button>
+                <button class="pagination__page">
+                    5
+                </button>
+                <button class="pagination__page">
+                    6
+                </button>
+                <button class="pagination__page">
+                    7
+                </button>
+                <button class="pagination__page">
+                    8
+                </button>
+                <button class="pagination__page">
+                    9
+                </button>
+                <div class="pagination__hide">
+                    <div class="pagination__hide-dot"></div>
+                    <div class="pagination__hide-dot"></div>
+                    <div class="pagination__hide-dot"></div>
+                </div>
+                <button class="pagination__page">
+                    34
+                </button>
+            </div>
+
+            <button class="pagination__next">
+                <img src="img/next.svg" alt="next button">
+            </button>
+
+        </div>
 
         <footer class="footer">
             <h2 class="footer__title">

@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  &__wrap {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__page {
+    width: 32px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+    &--active {
+      color: #ffffff;
+      background: #cd0000;
+      border-radius: 50%;
+    }
+  }
+
+  &__hide {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  &__hide-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #c7cad1;
+  }
+}

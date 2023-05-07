@@ -13,13 +13,20 @@ img {
   object-fit: contain;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .wrapper {
   padding: 0 40px;
   margin: 0 auto;
 }
 
 .inner {
-  padding-left: 283px;
+  padding-left: 200px;
 }
 
 .phone--red {

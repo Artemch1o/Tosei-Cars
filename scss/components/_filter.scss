@@ -1,4 +1,9 @@
 .filter {
+  background-color: #ffffff;
+  padding: 24px;
+  box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+  border-radius: 6px;
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -7,6 +12,14 @@
 
   &__row {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  &__select-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 80px;
   }
 
   &__row-container {
@@ -79,11 +92,6 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
-    width: 100%;
-
-    &:not(:last-child) {
-      margin-right: 16px;
-    }
   }
 
   &__select-text {
@@ -102,16 +110,30 @@
     color: #000000;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__search-type {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #CACACA;
+    padding: 6px 10px;
     width: 200px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #CD0000;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: auto;
   }
 
   &__select-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3px;
-
-    .filter__select-box {
-      flex-basis: 100px; // width: 100px
-    }
   }
 
   &__btn {
@@ -121,9 +143,21 @@
     font-size: 14px;
     line-height: 140%;
     color: #ffffff;
-    height: 100%;
     align-self: flex-end;
     border: none;
     padding: 6px 16px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #808080;
+
+    &--accent {
+      color: #CD0000;
+    }
   }
 }
