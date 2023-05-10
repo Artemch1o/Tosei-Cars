@@ -875,6 +875,14 @@ button {
   max-height: 148px;
   padding-right: 32px;
 }
+.popular__img__update {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 258px;
+  max-height: 148px;
+  padding-right: 32px;
+  border-radius: 2px;
+}
 .popular__info {
   display: -webkit-box;
   display: -ms-flexbox;

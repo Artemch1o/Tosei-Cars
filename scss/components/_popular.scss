@@ -24,6 +24,14 @@
     padding-right: 32px;
   }
 
+  &__img__update {
+    object-fit: cover;
+    width: 258px;
+    max-height: 148px;
+    padding-right: 32px;
+    border-radius: 2px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
