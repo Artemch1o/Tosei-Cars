@@ -458,70 +458,76 @@
 
         </section>
 
-        <section class="connect">
-            <div class="connect__info">
-                <h2 class="connect__title section-title">Обратная связь</h2>
+        <div class="connect">
+            <div class="connect__row">
+                <div class="connect__block">
+                    <h3 class="connect__title">Обратная связь</h3>
 
-                <div class="connect__form">
-                    <div class="connect__row">
-                        <label class="connect__label" for="name">Ваше имя</label>
-                        <input class="connect__input" type="text" id="name" placeholder="Ввести">
-                    </div>
+                    <form class="connect__form" action="#" method="POST">
+                        <div class="connect__field">
+                            <label class="connect__label" for="username">Ваше имя</label>
+                            <input class="connect__input" type="text" name="username" id="username"
+                                placeholder="Ввести">
+                        </div>
 
-                    <div class="connect__row">
-                        <label class="connect__label" for="tel">Контактный телефон</label>
-                        <input class="connect__input" type="text" id="tel" placeholder="+7">
-                    </div>
+                        <div class="connect__field">
+                            <label class="connect__label" for="telephone">Контактный телефон</label>
+                            <input class="connect__input" type="text" name="telephone" id="telephone" placeholder="+7">
+                        </div>
 
-                    <button class="connect__btn">Проконсультировать бесплатно</button>
-                </div>
-
-                <connect
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A15d13a18431422d0faf1a1680b70abe32431bb3c1ddd614f6cec611700c01cd3&amp;source=constructor"
-                    frameborder="0">
-                </connect>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <h2 class="footer__title">
-                © Тосэй 2021. Все права защищены
-            </h2>
-
-            <div class="footer__row">
-                <div class="footer__col">
-                    <p class="footer__desc">Продажа грузовой и спецтехники, легковых автомобилей, водной техники. Любая
-                        техника из Японии, США, Кореи, Китая и Сингапура. Авто с аукционов.</p>
-                    <p class="footer__text">
-                        <img src="img/map.svg" alt="">
-                        Владивосток, ул. Фадеева, д. 47, строение 1
-                    </p>
-                </div>
-
-                <div class="connection__col">
-                    <div class="connection__info">
-                        <img src="img/watchsap.svg" alt="">
-
-                        <a class="connection__tel" href="tel:88002507807">+7 (423) 208-11-18</a>
-                    </div>
-
-                    <div class="connection__info">
-                        <img src="img/watchsap.svg" alt="">
-
-                        <a class="connection__tel" href="tel:88002507807">+7 (984) 197-77-78</a>
-                    </div>
-                </div>
-
-                <div class="connection__col">
-                    <div class="connection__info">
-                        <img src="img/mail-line.svg" alt="">
-
-                        <a class="connection__mail" href="mailto:spec@toseiru">spec@tosei.ru</a>
-                    </div>
+                        <button class="connect__btn" type="submit">
+                            Проконсультировать бесплатно
+                        </button>
+                    </form>
                 </div>
             </div>
 
-        </footer>
+            <div class="connect__map">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5afdc1e45571f0dc882527287b4e8e30899bac264b8e879369bdef824fd2b5cf&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h2 class="footer__title">
+            © Тосэй 2021. Все права защищены
+        </h2>
+
+        <div class="footer__row">
+            <div class="footer__col">
+                <p class="footer__desc">Продажа грузовой и спецтехники, легковых автомобилей, водной техники. Любая
+                    техника из Японии, США, Кореи, Китая и Сингапура. Авто с аукционов.</p>
+                <p class="footer__text">
+                    <img src="img/map.svg" alt="">
+                    Владивосток, ул. Фадеева, д. 47, строение 1
+                </p>
+            </div>
+
+            <div class="connection__col">
+                <div class="connection__info">
+                    <img src="img/watchsap.svg" alt="">
+
+                    <a class="connection__tel" href="tel:88002507807">+7 (423) 208-11-18</a>
+                </div>
+
+                <div class="connection__info">
+                    <img src="img/watchsap.svg" alt="">
+
+                    <a class="connection__tel" href="tel:88002507807">+7 (984) 197-77-78</a>
+                </div>
+            </div>
+
+            <div class="connection__col">
+                <div class="connection__info">
+                    <img src="img/mail-line.svg" alt="">
+
+                    <a class="connection__mail" href="mailto:spec@toseiru">spec@tosei.ru</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     </div>
 
     <script src="main.js">
