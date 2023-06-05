@@ -1,17 +1,19 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 40px;
-    background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px;
+  background-color: #ffffff;
+  max-width: 1030px;
+  margin: 0 auto;
 
-    &__text {
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
-    }
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
 
-    &__info {
-        text-align: right;
-    }
+  &__info {
+    text-align: right;
+  }
 }

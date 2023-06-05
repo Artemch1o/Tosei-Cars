@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: solid red 1px;
 }
 
 body {
@@ -21,12 +22,19 @@ button {
 }
 
 .wrapper {
+  max-width: 1030px;
   padding: 0 40px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 540px;
+  }
 }
 
 .inner {
-  padding-left: 200px;
+  @media screen and (min-width: 921px) {
+    padding-left: 200px;
+  }
 }
 
 .phone--red {
