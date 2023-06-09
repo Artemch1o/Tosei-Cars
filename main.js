@@ -14,3 +14,8 @@ function stopVideo(item) {
     item.pause();
   }
 }
+
+document.querySelector(".hamburger").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".aside").classList.toggle("active");
+});

@@ -11,9 +11,68 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+
+    @media screen and (max-width: 920px) {
+      display: none;
+    }
   }
 
   &__info {
     text-align: right;
+
+    @media screen and (max-width: 920px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    margin-bottom: 0;
+
+    @media screen and (min-width: 921px) {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+
+    @media screen and (min-width: 921px) {
+      display: none;
+    }
+
+    &__stripe {
+      width: 20px;
+      height: 2px;
+      background-color: #FFFFFF;
+
+      &--2 {
+        width: 15px;
+        margin-left: -5px;
+      }
+    }
+
+    &.active {
+      .hamburger__stripe--1 {
+        position: absolute;
+        transform: rotate(45deg);
+      }
+
+      .hamburger__stripe--2 {
+        transform: scaleY(0);
+      }
+
+      .hamburger__stripe--3 {
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }

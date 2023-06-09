@@ -8,8 +8,18 @@
   height: 100vh;
   padding: 28px 0;
 
+
   @media screen and (max-width: 920px) {
-    display: none;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    padding-top: 96px;
+    width: 40%;
+    max-width: unset;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 70%;
   }
 
   &__list {
@@ -56,5 +66,15 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .logo {
+    @media screen and (max-width: 920px) {
+      display: none;
+    }
   }
 }
