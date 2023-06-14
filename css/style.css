@@ -886,10 +886,10 @@ button {
 .header .hamburger {
   width: 40px;
   height: 40px;
-  background-color: #1F1F1F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -900,39 +900,63 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
   z-index: 2;
+  cursor: pointer;
 }
 @media screen and (min-width: 921px) {
-  .header .hamburger {
+  .header {
     display: none;
   }
 }
-.header .hamburger__stripe {
-  width: 20px;
-  height: 2px;
-  background-color: #FFFFFF;
+.header .hamburger__menu {
+  width: 30px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.header .hamburger__stripe--2 {
-  width: 15px;
-  margin-left: -5px;
-}
-.header .hamburger.active .hamburger__stripe--1 {
+.header .hamburger__menu::before,
+.header .hamburger__menu::after {
+  content: "";
   position: absolute;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  width: 40px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.header .hamburger.active .hamburger__stripe--2 {
-  -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
+.header .hamburger__menu::before {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
-.header .hamburger.active .hamburger__stripe--3 {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.header .hamburger__menu::after {
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+.header .hamburger.active .hamburger__menu {
+  -webkit-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+.header .hamburger.active .hamburger__menu::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+      -ms-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.header .hamburger.active .hamburger__menu::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+  -ms-transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .pagination {
