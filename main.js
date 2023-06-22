@@ -19,3 +19,7 @@ document.querySelector(".hamburger").addEventListener("click", function () {
   this.classList.toggle("active");
   document.querySelector(".aside").classList.toggle("active");
 });
+
+document.querySelector(".registration").addEventListener("click", function () {
+  document.querySelector(".modal--registration").classList.toggle("active");
+});

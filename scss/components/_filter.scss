@@ -31,6 +31,7 @@
 
   &__checkbox {
     position: relative;
+
     &:not(:last-child) {
       margin-right: 32px;
     }
@@ -80,12 +81,12 @@
     }
   }
 
-  &__input:checked + &__label:before {
+  &__input:checked+&__label:before {
     background-color: #cd0000;
     border-color: #cd0000;
   }
 
-  &__input:checked + &__label:after {
+  &__input:checked+&__label:after {
     opacity: 1;
   }
 
@@ -137,18 +138,8 @@
     gap: 3px;
   }
 
-  &__btn {
-    background: #cd0000;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    color: #ffffff;
+  .btn--red {
     align-self: flex-end;
-    border: none;
-    padding: 6px 16px;
-    width: 100%;
-    cursor: pointer;
   }
 
   &__text {

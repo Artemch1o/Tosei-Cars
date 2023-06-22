@@ -195,8 +195,7 @@
 }
 
 .review {
-  &__video {
-  }
+  &__video {}
 
   &__row {
     display: flex;
@@ -347,15 +346,8 @@
     border: none;
   }
 
-  &__btn {
-    background-color: #cd0000;
-    border: none;
+  .btn--red {
     padding: 12px 16px;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
   }
 
   &__map {

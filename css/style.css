@@ -54,6 +54,18 @@ button {
   color: #000000;
 }
 
+.btn--red {
+  background: #cd0000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 6px 16px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,15 +466,8 @@ button {
   border-radius: 2px;
   border: none;
 }
-.connect__btn {
-  background-color: #cd0000;
-  border: none;
+.connect .btn--red {
   padding: 12px 16px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
 }
 .connect__map {
   width: 100%;
@@ -783,19 +788,9 @@ button {
   grid-template-columns: repeat(2, 1fr);
   gap: 3px;
 }
-.filter__btn {
-  background: #cd0000;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-  color: #ffffff;
+.filter .btn--red {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  border: none;
-  padding: 6px 16px;
-  width: 100%;
-  cursor: pointer;
 }
 .filter__text {
   font-weight: 500;
@@ -971,6 +966,27 @@ button {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.modal--registration {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
+  height: 50vh;
+  margin: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+          box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+  border-radius: 6px;
+  padding: 40px;
+}
+.modal--registration.active {
+  display: block;
 }
 
 .pagination {

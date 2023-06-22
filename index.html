@@ -57,6 +57,10 @@
                 <p class="header__text">Бесплатный звонок по всей России</p>
             </div>
 
+            <button class="btn--red registration">
+                Вход
+            </button>
+
             <a href="/" class="logo">
                 <img class="logo__img" src="img/logo.svg" alt="">
                 <span class="logo__text">Tosei</span>
@@ -126,7 +130,7 @@
                                 </div>
                             </div>
 
-                            <button class="filter__btn">Найти</button>
+                            <button class="btn--red">Найти</button>
                         </div>
                     </form>
                 </div>
@@ -546,7 +550,7 @@
                             <input class="connect__input" type="text" name="telephone" id="telephone" placeholder="+7">
                         </div>
 
-                        <button class="connect__btn" type="submit">
+                        <button class="btn--red" type="submit">
                             Проконсультировать бесплатно
                         </button>
                     </form>
@@ -599,9 +603,26 @@
         </div>
 
     </footer>
+
+    <div class="modal--registration">
+        <h3 class="connect__title">Вход</h3>
+
+        <form class="connect__form" action="#" method="POST">
+            <div class="connect__field">
+                <label class="connect__label" for="login">Логин</label>
+                <input class="connect__input" type="text" name="login" id="login" placeholder="Логин">
+            </div>
+
+            <div class="connect__field">
+                <label class="connect__label" for="password">Пароль</label>
+                <input class="connect__input" type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+
+            <button class="btn--red" type="submit">
+                Войти
+            </button>
+        </form>
     </div>
-
-
 </body>
 <script src="main.js"></script>
 

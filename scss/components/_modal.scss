@@ -1,0 +1,22 @@
+.modal {
+    &--registration {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 30vw;
+        height: 50vh;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+        border-radius: 6px;
+        padding: 40px;
+
+        &.active {
+            display: block;
+        }
+    }
+}
