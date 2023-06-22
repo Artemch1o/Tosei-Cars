@@ -7,6 +7,7 @@
   background-color: #f7f7f9;
   height: 100vh;
   padding: 28px 0;
+  transition: transform .3s ease;
 
   @media screen and (max-width: 920px) {
     right: 0;
@@ -36,6 +37,10 @@
     line-height: 20px;
     color: #000000;
     cursor: pointer;
+
+    @media screen and (max-width: 920px) {
+      padding: 12px 45px;
+    }
 
     &:hover {
       color: #858594;
