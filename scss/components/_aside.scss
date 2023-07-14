@@ -1,5 +1,5 @@
 .aside {
-  display: none;
+  display: flex;
   position: fixed;
   flex-direction: column;
   background-color: #f7f7f9;
@@ -21,15 +21,16 @@
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.8);
     pointer-events: none;
     content: '';
   }
 
   @media screen and (max-width: 920px) {
+    display: none;
     right: 0;
     transform: translateX(100%);
-    z-index: 1;
+    z-index: 3;
     padding-top: 96px;
     width: 40%;
     max-width: unset;
@@ -48,6 +49,7 @@
 
   &__list-item {
     cursor: pointer;
+    margin-left: -1px;
     padding: 8px 26px;
     color: #000000;
     font-weight: 600;
@@ -64,7 +66,7 @@
     }
 
     &--active {
-      border-left: 2px solid #cd0000;
+      border-left: 4px solid #cd0000;
 
       .aside__list-link {
         color: #858594;
@@ -87,6 +89,11 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .logo {
