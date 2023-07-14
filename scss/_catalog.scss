@@ -2,11 +2,11 @@
   box-shadow: -1px 0px 0px #e5e5ef;
 
   &__banner {
-    padding: 23px 42px 38px;
-    background: #f7f7f9;
     margin-bottom: 37px;
     box-shadow: -1px 0px 0px #E5E5EF;
     border-left: 1px solid #E5E5E5;
+    background: #f7f7f9;
+    padding: 23px 42px 38px;
   }
 
   &__wrapper {
@@ -14,11 +14,11 @@
   }
 
   &__title {
+    margin-bottom: 24px;
+    color: #000000;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    color: #000000;
-    margin-bottom: 24px;
   }
 
   .popular {

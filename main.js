@@ -18,8 +18,16 @@ function stopVideo(item) {
 document.querySelector(".hamburger").addEventListener("click", function () {
   this.classList.toggle("active");
   document.querySelector(".aside").classList.toggle("active");
+
+  document.querySelector("body").style.overflow = "hidden";
 });
 
 document.querySelector(".registration").addEventListener("click", function () {
-  document.querySelector(".modal--registration").classList.toggle("active");
+  document.querySelector(".modal").classList.toggle("active");
+  
+  document.querySelector("body").style.overflow = "hidden";
+});
+
+document.querySelector(".modal__close").addEventListener("click", function () {
+  document.querySelector(".modal").classList.toggle("active");
 });

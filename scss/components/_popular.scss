@@ -3,8 +3,8 @@
 
   &__wrapper {
     display: flex;
-    width: 100%;
     align-items: center;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -13,11 +13,11 @@
   }
 
   &__title-cars {
+    gap: 8px;
+    color: #000000;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #000000;
-    gap: 8px;
   }
 
   &__cars {
@@ -39,18 +39,18 @@
     object-fit: cover;
 
     @media screen and (min-width: 769px) {
-      max-height: 148px;
-      padding-right: 32px;
       margin-bottom: 0;
+      padding-right: 32px;
+      max-height: 148px;
     }
   }
 
   &__img__update {
-    object-fit: cover;
+    border-radius: 2px;
+    padding-right: 32px;
     width: 258px;
     max-height: 148px;
-    padding-right: 32px;
-    border-radius: 2px;
+    object-fit: cover;
   }
 
   &__info {
@@ -62,17 +62,17 @@
   }
 
   &__text {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
   }
 
   &__line {
-    height: 1px;
+    border: none;
     background-color: lightgrey;
     width: 100%;
-    border: none;
+    height: 1px;
 
     @media screen and (min-width: 769px) {
       display: none;
@@ -81,13 +81,13 @@
 
   &__price {
     display: flex;
-    flex-direction: column;
     flex-grow: 1;
+    flex-direction: column;
     justify-content: flex-end;
-    text-align: flex-end;
     align-items: flex-end;
     gap: 8px;
     width: 100%;
+    text-align: flex-end;
 
     @media screen and (max-width: 768px) {
       align-items: flex-start;
@@ -95,34 +95,34 @@
   }
 
   &__check {
+    color: #000000;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
   }
 
   &__btn {
+    border: none;
+    border-radius: 35px;
+    background: #73db43;
+    padding: 10px;
+    color: #ffffff;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #ffffff;
-    background: #73db43;
-    border-radius: 35px;
-    padding: 10px;
-    border: none;
     font-family: "Montserrat";
 
     &--orange {
+      border: none;
+      border-radius: 35px;
+      background-color: #ebb428;
+      padding: 10px;
+      width: 93px;
+      color: #ffffff;
       font-weight: 500;
       font-size: 13px;
       line-height: 16px;
-      color: #ffffff;
-      background-color: #ebb428;
-      border-radius: 35px;
-      padding: 10px;
-      border: none;
       font-family: "Montserrat";
-      width: 93px;
     }
   }
 
@@ -130,10 +130,10 @@
     display: flex;
     flex-direction: row;
     gap: 6px;
+    color: #8b8b8b;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #8b8b8b;
 
     &-information {
       color: #000000;
@@ -144,12 +144,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding: 13px;
+    color: #2c2c2c;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #2c2c2c;
-    padding: 13px;
-    background-color: #f4f4f4;
-    border-radius: 4px;
   }
 }

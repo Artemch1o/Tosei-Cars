@@ -604,24 +604,28 @@
 
     </footer>
 
-    <div class="modal--registration">
-        <h3 class="connect__title">Вход</h3>
+    <div class="modal">
+        <div class="modal--registration">
+            <button aria-label="Закрыть" type="button" class="modal__close"></button>
 
-        <form class="connect__form" action="#" method="POST">
-            <div class="connect__field">
-                <label class="connect__label" for="login">Логин</label>
-                <input class="connect__input" type="text" name="login" id="login" placeholder="Логин">
-            </div>
-
-            <div class="connect__field">
-                <label class="connect__label" for="password">Пароль</label>
-                <input class="connect__input" type="password" name="password" id="password" placeholder="Пароль">
-            </div>
-
-            <button class="btn--red" type="submit">
-                Войти
-            </button>
-        </form>
+            <h3 class="connect__title">Вход</h3>
+    
+            <form class="connect__form" action="#" method="POST">
+                <div class="connect__field">
+                    <label class="connect__label" for="login">Логин</label>
+                    <input class="connect__input" type="text" name="login" id="login" placeholder="Логин">
+                </div>
+    
+                <div class="connect__field">
+                    <label class="connect__label" for="password">Пароль</label>
+                    <input class="connect__input" type="password" name="password" id="password" placeholder="Пароль">
+                </div>
+    
+                <button class="btn--red" type="submit">
+                    Войти
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 <script src="main.js"></script>

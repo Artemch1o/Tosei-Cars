@@ -5,15 +5,15 @@
   margin-bottom: 20px;
 
   &__text {
+    color: #8b8b8b;
     font-size: 12px;
     line-height: 15px;
-    color: #8b8b8b;
   }
 
   &__circle {
-    width: 5px;
-    height: 5px;
     border-radius: 50%;
     background-color: #c4c4c4;
+    width: 5px;
+    height: 5px;
   }
 }
