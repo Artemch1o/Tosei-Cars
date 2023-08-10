@@ -737,7 +737,6 @@ button {
   left: 0;
   z-index: 1;
   -webkit-transition: background-color 0.5s linear, border 0.5s linear;
-  -o-transition: background-color 0.5s linear, border 0.5s linear;
   transition: background-color 0.5s linear, border 0.5s linear;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -754,7 +753,6 @@ button {
   opacity: 0;
   z-index: 2;
   -webkit-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
   background: url("/img/Icon.svg") no-repeat;
   background-size: 12px 12px;
@@ -954,7 +952,6 @@ button {
 }
 .header .hamburger__menu {
   -webkit-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   border-radius: 3px;
   background-color: #000000;
@@ -968,7 +965,6 @@ button {
           transform: translateY(-10px);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   border-radius: 3px;
@@ -984,7 +980,6 @@ button {
           transform: translateY(10px);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   border-radius: 3px;
@@ -1343,7 +1338,6 @@ button {
   left: 0;
   z-index: 1;
   -webkit-transition: border 0.5s linear;
-  -o-transition: border 0.5s linear;
   transition: border 0.5s linear;
   border: 1px solid #d3d3d3;
   border-radius: 50%;
@@ -1360,7 +1354,6 @@ button {
   opacity: 0;
   z-index: 2;
   -webkit-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
   border-radius: 50%;
   background-color: white;
